@@ -1,4 +1,3 @@
-@@ -1,59 +1 @@
 # 🛍️ DredSoft eCommerce React App
 
 A full-featured eCommerce web application built using **React**, **Redux**, **Bootstrap**, and **Fake Store API**. This project simulates a modern shopping platform with product listings, filtering, a shopping cart, and checkout flow.
