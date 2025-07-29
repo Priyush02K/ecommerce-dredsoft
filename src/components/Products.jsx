@@ -58,22 +58,17 @@ const Products = () => {
 
   const ShowProducts = () => (
     <>
-  <div className="buttons text-center py-4">
-  {["All", "men's clothing", "women's clothing", "jewelery", "electronics"].map((cat, i) => (
-    <button
-      key={i}
-      className="btn btn-outline-dark btn-sm mx-2 px-3 py-2  shadow-sm"
-      onClick={() => (cat === "All" ? setFilter(data) : filterProduct(cat))}
-      style={{
-        borderRadius: "6px", // 👈 small rounded corners
-        fontSize: "0.9rem",
-        fontWeight: "500",
-      }}
-    >
-      {cat.charAt(0).toUpperCase() + cat.slice(1)}
-    </button>
-  ))}
-</div>
+      <div className="buttons text-center py-4">
+        {["All", "men's clothing", "women's clothing", "jewelery", "electronics"].map((cat, i) => (
+          <button
+            key={i}
+            className="btn btn-outline-dark btn-sm mx-2"
+            onClick={() => (cat === "All" ? setFilter(data) : filterProduct(cat))}
+          >
+            {cat.charAt(0).toUpperCase() + cat.slice(1)}
+          </button>
+        ))}
+      </div>
 
       {filter.map((product) => (
         <div

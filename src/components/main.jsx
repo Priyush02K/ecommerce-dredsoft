@@ -14,7 +14,7 @@ const Home = () => {
               {/* Slide 1 */}
               <div className="carousel-item active">
                 <img
-                  src="./assets/banner_1.png"
+                  src="./public/assets/banner_1.png"
                   className="d-block w-100"
                   alt="First slide"
                   style={{

@@ -1,5 +1,4 @@
 {
-  "homepage": "https://Priyush02K.github.io/ecommerce-dredsoft",
   "name": "ecommerce",
   "version": "0.1.0",
   "private": true,
@@ -64,9 +63,7 @@
     "eject": "react-scripts eject",
     "build:tailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css",
     "watch:tailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "eslintConfig": {
     "extends": [
