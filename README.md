@@ -49,10 +49,10 @@ A full-featured eCommerce web application built using **React**, **Redux**, **Bo
 git clone https://github.com/Priyush02K/ecommerce-dredsoft.git
 
 # 2. Navigate into project folder
-cd ecommerce-dredsoft
+cd ecommerce-dredsoft 
 
 # 3. Install dependencies
 npm install
 
 # 4. Run the app
-npm run dev  # or npm start if using Create React App
+npm start or run dev  # or npm start if using Create React App
