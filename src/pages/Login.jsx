@@ -6,35 +6,58 @@ const Login = () => {
   return (
     <>
       <Navbar />
-      <div className="container my-3 py-3">
-        <h1 className="text-center">Login</h1>
-        <hr />
-        <div class="row my-4 h-100">
-          <div className="col-md-4 col-lg-4 col-sm-8 mx-auto">
+      <div className="container my-5 py-4">
+        <h1 className="text-center mb-4">Login</h1>
+        <hr className="w-25 mx-auto mb-4" />
+
+        <div className="row justify-content-center">
+          <div className="col-md-6 col-lg-4 col-sm-10">
             <form>
-              <div class="my-3">
-                <label for="display-4">Email address</label>
+              <div className="mb-3">
+                <label htmlFor="email" className="form-label fw-semibold">
+                  Email address
+                </label>
                 <input
                   type="email"
-                  class="form-control"
-                  id="floatingInput"
+                  className="form-control"
+                  id="email"
                   placeholder="name@example.com"
+                  required
                 />
               </div>
-              <div class="my-3">
-                <label for="floatingPassword display-4">Password</label>
+
+              <div className="mb-3">
+                <label htmlFor="password" className="form-label fw-semibold">
+                  Password
+                </label>
                 <input
                   type="password"
-                  class="form-control"
-                  id="floatingPassword"
-                  placeholder="Password"
+                  className="form-control"
+                  id="password"
+                  placeholder="••••••••"
+                  required
                 />
               </div>
-              <div className="my-3">
-                <p>New Here? <Link to="/register" className="text-decoration-underline text-info">Register</Link> </p>
+
+              <div className="mb-3 text-start">
+                <p className="mb-0">
+                  New here?{" "}
+                  <Link
+                    to="/register"
+                    className="text-decoration-underline text-primary"
+                  >
+                    Register
+                  </Link>
+                </p>
               </div>
+
               <div className="text-center">
-                <button class="my-2 mx-auto btn btn-dark" type="submit" disabled>
+                <button
+                  className="btn btn-dark w-100 py-2"
+                  type="submit"
+                  disabled
+                  title="Login disabled (demo only)"
+                >
                   Login
                 </button>
               </div>
@@ -42,6 +65,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   );

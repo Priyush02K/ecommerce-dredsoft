@@ -38,8 +38,10 @@ root.render(
           <Route path="/checkout" element={<Checkout />} />
           <Route path="*" element={<PageNotFound />} />
           <Route path="/product/*" element={<PageNotFound />} />
+          
         </Routes>
       </Provider>
+      
     </ScrollToTop>
     <Toaster />
   </BrowserRouter>

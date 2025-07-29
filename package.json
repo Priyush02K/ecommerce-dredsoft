@@ -5,6 +5,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
     "@sendgrid/mail": "^8.1.5",
+    "@tailwindcss/vite": "^4.1.11",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -59,7 +60,9 @@
     "client": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts eject",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+     "build:tailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch:tailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "eslintConfig": {
     "extends": [
@@ -78,5 +81,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
   }
+
 }
