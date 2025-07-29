@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home = () => {
+const Main = () => {
   return (
     <>
       <div className="hero border-bottom pb-3">
@@ -14,7 +14,7 @@ const Home = () => {
               {/* Slide 1 */}
               <div className="carousel-item active">
                 <img
-                  src="./public/assets/banner_1.png"
+                  src="/assets/banner_1.png"
                   className="d-block w-100"
                   alt="First slide"
                   style={{
@@ -35,7 +35,7 @@ const Home = () => {
               {/* Slide 2 */}
               <div className="carousel-item">
                 <img
-                  src="./assets/banner_2.png"
+                  src="/assets/banner_2.png"
                   className="d-block w-100"
                   alt="Second slide"
                   style={{
@@ -56,7 +56,7 @@ const Home = () => {
               {/* Slide 3 */}
               <div className="carousel-item">
                 <img
-                  src="./assets/banner_3.png"
+                  src="/assets/banner_3.png"
                   className="d-block w-100"
                   alt="Third slide"
                   style={{
@@ -99,4 +99,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Main;
